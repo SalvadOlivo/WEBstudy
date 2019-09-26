@@ -22,75 +22,75 @@ function init(){
     var cerp = document.getElementById("cero");
 }
 //eventos
-uno.onclick = Function(e){
-    resultado.TextContent = resultado.TextContent + "1";
+uno.onclick = function(e){
+    resultado.textContent = resultado.textContent + "1";
 
 }
-dos.onclick = Function(e){
-    resultado.TextContent = resultado.TextContent + "2";
+dos.onclick = function(e){
+    resultado.textContent = resultado.textContent + "2";
     
     }
 tres.onclick = function(e){
-    resultado.TextContent = resultado.textContent + "3";
+    resultado.textContent = resultado.textContent + "3";
 
 }
 cuatro.onclick = function(e){
-    resultado.TextContent = resultado.textContent + "4";
+    resultado.textContent = resultado.textContent + "4";
 
 }
 cinco.onclick = function(e){
-    resultado.TextContent = resultado.textContent + "5";
+    resultado.textContent = resultado.textContent + "5";
 
 }
 seis.onclick = function(e){
-    resultado.TextContent = resultado.textContent + "6";
+    resultado.textContent = resultado.textContent + "6";
 
 }
 siete.onclick = function(e){
-    resultado.TextContent = resultado.textContent + "7";
+    resultado.textContent = resultado.textContent + "7";
 
 }
 ocho.onclick = function(e){
-    resultado.TextContent = resultado.textContent + "8";
+    resultado.textContent = resultado.textContent + "8";
 
 }
 nueve.onclick = function(e){
-    resultado.TextContent = resultado.textContent + "9";
+    resultado.textContent = resultado.textContent + "9";
 
 }
 cero.onclick = function(e){
-    resultado.TextContent = resultado.textContent + "0";
+    resultado.textContent = resultado.textContent + "0";
 
 };
 //eventos operaciones
-reset.onclick = {
+reset.onclick = function(e){
     resetear();
 
 }
-igual.onclick = function{
+igual.onclick = function(e){
     num2 = resultado.textContent;
     resolver();
 }
 
-suma.onclick = function{
+suma.onclick = function(e){
     num1 = resultado.textContent;
     operacion = "+";
     limpiar();
 
 }
-resta.onclick = function{
+resta.onclick = function(e){
     num1 = resultado.textContent;
     operacion = "-";
     limpiar();
 
 }
-multiplicacion.onclick = function {
+multiplicacion.onclick = function(e) {
     num1 = resultado.textContent;
     operacion = "*";
     limpiar();
 
 }
-division.onclick = function{
+division.onclick = function(e){
     num1 = resultado.textContent;
     operacion = "/";
     limpiar();
@@ -109,17 +109,3 @@ function resetear(){
     operacion = "";
 };
 
-function resolver(){
-    var res = 0;
-    switch(operacion){
-        case "+";
-        res = parseFloat(num1) + parseFloat(num2)
-
-
-
-
-
-    }
-
-
-}
