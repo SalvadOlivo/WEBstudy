@@ -19,6 +19,11 @@
     
 
 }
+.casio td button:hover{
+    color: white;
+    opacity: 25%;
+
+}
 
 #resultado{
     display: block;
@@ -30,5 +35,7 @@
     line-height: 100px;
     background-color: #ffffff;
     border-radius: 25px;
-    overflow: scroll;
+    
 }
+
+ 

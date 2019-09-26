@@ -23,7 +23,7 @@ function init(){
 }
 //eventos
 uno.onclick = function(e){
-    resultado.textContent = resultado.textContent + "1";
+    resultado.textContent = resultado.textContent; + "1";
 
 }
 dos.onclick = function(e){
@@ -97,7 +97,12 @@ division.onclick = function(e){
 
 }
 
-function resetear(){
+igual.onclick = function(e){
+    num2 = resultado.textContent;
+    resolver();
+
+}
+function limpiar(){
     resultado.textContent = "";
 
 }
@@ -109,3 +114,22 @@ function resetear(){
     operacion = "";
 };
 
+function resolver(){
+    var res = 0;
+    switch(operacion){
+        case "+":
+            res = parseFloat(num1) + parseFloat(num2)
+        break;
+        case "-":
+             res = parseFloat(num1) - parseFloat(num2)
+        break;
+        case "*":
+                res = parseFloat(num1) * parseFloat(num2)
+        break;
+        case "/":
+                res = parseFloat(num1) / parseFloat(num2)
+        break;
+    }
+    resetear();
+    resultado.textContent = res;
+}
