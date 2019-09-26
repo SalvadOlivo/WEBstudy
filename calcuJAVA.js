@@ -3,13 +3,13 @@ var num1, num2, operacion;
 
 function init(){
     //obteniendo pantalla de resultados
-    var resultado = documento.getElementById("resultado");
-    var reset = documento.getElementById("C");
-    var suma = documento.getElementById("suma");
-    var resta = documento.getElementById("resta");
-    var multiplicacion = documento.getElementById("multiplicacion");
-    var division = documento.getElementById("division");
-    var igual = documento.getElementById("igual");
+    var resultado = document.getElementById("resultado");
+    var reset = document.getElementById("reset");
+    var suma = document.getElementById("suma");
+    var resta = document.getElementById("resta");
+    var multiplicacion = document.getElementById("multiplicacion");
+    var division = document.getElementById("division");
+    var igual = document.getElementById("igual");
     var uno = document.getElementById("uno");
     var dos = document.getElementById("dos");
     var tres = document.getElementById("tres");
@@ -20,10 +20,10 @@ function init(){
     var ocho = document.getElementById("ocho");
     var nueve= document.getElementById("nueve");
     var cerp = document.getElementById("cero");
-}
+
 //eventos
 uno.onclick = function(e){
-    resultado.textContent = resultado.textContent; + "1";
+    resultado.textContent = resultado.textContent + "1";
 
 }
 dos.onclick = function(e){
@@ -62,6 +62,7 @@ cero.onclick = function(e){
     resultado.textContent = resultado.textContent + "0";
 
 };
+
 //eventos operaciones
 reset.onclick = function(e){
     resetear();
@@ -132,4 +133,6 @@ function resolver(){
     }
     resetear();
     resultado.textContent = res;
+}
+
 }
